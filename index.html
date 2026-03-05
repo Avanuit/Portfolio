@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Space Portfolio | Neon Crimson</title>
+  
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700&display=swap" rel="stylesheet"/>
+  
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-black">
+  <div id="canvas-container"></div>
+  
+  <main class="content-overlay">
+    <section class="scroll-section" id="section-sun">
+      <div class="text-center max-w-4xl">
+        <h1 class="text-7xl md:text-9xl font-bold uppercase tracking-tighter neon-text mb-4">Space Portfolio</h1>
+        <p class="text-xl md:text-2xl text-gray-400 uppercase tracking-widest">Architect of the Void</p>
+        <div class="mt-12 animate-bounce">
+          <span class="text-sm tracking-[0.5em] text-[#ff0040]">SCROLL TO EXPLORE</span>
+        </div>
+      </div>
+    </section>
+    
+    <section class="scroll-section" id="section-mercury">
+      <div class="p-8 retro-border bg-black/80 max-w-lg">
+        <h2 class="text-4xl font-bold mb-4 neon-text uppercase">Project 1: Mercury Core</h2>
+        <p class="text-gray-300 leading-relaxed">
+          Deep-level systems architecture involving high-temperature data environments. Designed for efficiency at the edge of the sun's gravity well.
+        </p>
+        <div class="mt-6">
+          <button class="px-6 py-2 bg-[#ff0040] text-black font-bold hover:bg-white transition-colors duration-300">VIEW SYSTEM</button>
+        </div>
+      </div>
+    </section>
+    
+    <section class="scroll-section" id="section-venus">
+      <div class="p-8 retro-border bg-black/80 max-w-lg">
+        <h2 class="text-4xl font-bold mb-4 neon-text uppercase">Project 2: Sulfuric Cloud</h2>
+        <p class="text-gray-300 leading-relaxed">
+          An immersive UI/UX experiment built to withstand the harshest visual environments. Dense, complex, and beautifully toxic.
+        </p>
+        <div class="mt-6">
+          <button class="px-6 py-2 bg-[#ff0040] text-black font-bold hover:bg-white transition-colors duration-300">DESCEND</button>
+        </div>
+      </div>
+    </section>
+    
+    <section class="scroll-section" id="section-earth">
+      <div class="p-8 retro-border bg-black/80 max-w-lg">
+        <h2 class="text-4xl font-bold mb-4 neon-text uppercase">Project 3: Blue Marble</h2>
+        <p class="text-gray-300 leading-relaxed">
+          The home base. A full-stack ecosystem connecting billions of nodes across a vibrant, living network of information.
+        </p>
+        <div class="mt-6">
+          <button class="px-6 py-2 bg-[#ff0040] text-black font-bold hover:bg-white transition-colors duration-300">LANDING</button>
+        </div>
+      </div>
+    </section>
+    
+    <section class="scroll-section" id="section-mars">
+      <div class="p-8 retro-border bg-black/80 max-w-lg">
+        <h2 class="text-4xl font-bold mb-4 neon-text uppercase">Project 4: Red Sands</h2>
+        <p class="text-gray-300 leading-relaxed">
+          Exploratory AI modules designed for terraforming data landscapes. The future of automation in the iron-rich dust.
+        </p>
+        <div class="mt-6">
+          <button class="px-6 py-2 bg-[#ff0040] text-black font-bold hover:bg-white transition-colors duration-300">COLONIZE</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
