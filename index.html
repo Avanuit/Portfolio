@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>Space Portfolio | Neon Crimson</title>
-  
-  <link href="https://fonts.googleapis.com" rel="preconnect"/>
-  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700&display=swap" rel="stylesheet"/>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Portafolio Personal</title>
+
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
-  
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  
+
   <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body class="bg-black">
   <div id="canvas-container"></div>
-  
+
   <main class="content-overlay">
     <section class="scroll-section" id="section-sun">
       <div class="text-center max-w-4xl">
@@ -29,85 +31,116 @@
         </div>
       </div>
     </section>
-    
+
     <section class="scroll-section" id="section-mercury">
       <div class="p-8 retro-border bg-black/80 max-w-lg">
         <h2 class="text-4xl font-bold mb-4 neon-text uppercase">Project 1: Mercury Core</h2>
-        <p class="text-gray-300 leading-relaxed mb-6">Deep-level systems architecture involving high-temperature data environments.</p>
-        <button class="project-btn px-6 py-2 bg-[#ff0040] text-black font-bold hover:bg-white transition-colors duration-300" data-url="projects/mercury-core.html">VIEW SYSTEM</button>
+        <p class="text-gray-300 leading-relaxed mb-6">Deep-level systems architecture involving high-temperature data
+          environments.</p>
+        <button
+          class="project-btn px-6 py-2 bg-[#ff0040] text-black font-bold hover:bg-white transition-colors duration-300"
+          data-url="projects/proyecto1/index.html">VIEW SYSTEM</button>
       </div>
     </section>
-    
+
     <section class="scroll-section" id="section-venus">
       <div class="p-8 retro-border bg-black/80 max-w-lg">
         <h2 class="text-4xl font-bold mb-4 neon-text uppercase">Project 2: Sulfuric Cloud</h2>
-        <p class="text-gray-300 leading-relaxed mb-6">An immersive UI/UX experiment built to withstand the harshest visual environments.</p>
-        <button class="project-btn px-6 py-2 bg-[#ff0040] text-black font-bold hover:bg-white transition-colors duration-300" data-url="projects/sulfuric-cloud.html">DESCEND</button>
+        <p class="text-gray-300 leading-relaxed mb-6">An immersive UI/UX experiment built to withstand the harshest
+          visual environments.</p>
+        <button
+          class="project-btn px-6 py-2 bg-[#ff0040] text-black font-bold hover:bg-white transition-colors duration-300"
+          data-url="projects/proyecto2.html">DESCEND</button>
       </div>
     </section>
-    
+
     <section class="scroll-section" id="section-earth">
       <div class="p-8 retro-border bg-black/80 max-w-lg">
         <h2 class="text-4xl font-bold mb-4 neon-text uppercase">Project 3: Blue Marble</h2>
-        <p class="text-gray-300 leading-relaxed mb-6">A full-stack ecosystem connecting billions of nodes across a vibrant, living network.</p>
-        <button class="project-btn px-6 py-2 bg-[#ff0040] text-black font-bold hover:bg-white transition-colors duration-300" data-url="projects/blue-marble.html">LANDING</button>
+        <p class="text-gray-300 leading-relaxed mb-6">A full-stack ecosystem connecting billions of nodes across a
+          vibrant, living network.</p>
+        <button
+          class="project-btn px-6 py-2 bg-[#ff0040] text-black font-bold hover:bg-white transition-colors duration-300"
+          data-url="projects/proyecto3.html">LANDING</button>
       </div>
     </section>
-    
+
     <section class="scroll-section" id="section-mars">
       <div class="p-8 retro-border bg-black/80 max-w-lg">
         <h2 class="text-4xl font-bold mb-4 neon-text uppercase">Project 4: Red Sands</h2>
-        <p class="text-gray-300 leading-relaxed mb-6">Exploratory AI modules designed for terraforming data landscapes.</p>
-        <button class="project-btn px-6 py-2 bg-[#ff0040] text-black font-bold hover:bg-white transition-colors duration-300" data-url="projects/red-sands.html">COLONIZE</button>
+        <p class="text-gray-300 leading-relaxed mb-6">Exploratory AI modules designed for terraforming data landscapes.
+        </p>
+        <button
+          class="project-btn px-6 py-2 bg-[#ff0040] text-black font-bold hover:bg-white transition-colors duration-300"
+          data-url="projects/proyecto4.html">COLONIZE</button>
       </div>
     </section>
 
     <section class="scroll-section" id="section-jupiter">
       <div class="p-8 retro-border bg-black/80 max-w-lg">
-        <h2 class="text-4xl font-bold mb-4 text-[#e3a857] uppercase drop-shadow-[0_0_10px_#e3a857]">Project 5: Gas Giant</h2>
-        <p class="text-gray-300 leading-relaxed mb-6">Massive database structures and backend architecture handling immense pressure.</p>
-        <button class="project-btn px-6 py-2 bg-[#e3a857] text-black font-bold hover:bg-white transition-colors duration-300" data-url="projects/gas-giant.html">ENTER STORM</button>
+        <h2 class="text-4xl font-bold mb-4 text-[#e3a857] uppercase drop-shadow-[0_0_10px_#e3a857]">Project 5: Gas Giant
+        </h2>
+        <p class="text-gray-300 leading-relaxed mb-6">Massive database structures and backend architecture handling
+          immense pressure.</p>
+        <button
+          class="project-btn px-6 py-2 bg-[#e3a857] text-black font-bold hover:bg-white transition-colors duration-300"
+          data-url="projects/proyecto5.html">ENTER STORM</button>
       </div>
     </section>
 
     <section class="scroll-section" id="section-saturn">
       <div class="p-8 retro-border bg-black/80 max-w-lg" style="border-color: #eadaa6; box-shadow: 0 0 15px #eadaa6;">
-        <h2 class="text-4xl font-bold mb-4 text-[#eadaa6] uppercase drop-shadow-[0_0_10px_#eadaa6]">Project 6: Ringed Core</h2>
-        <p class="text-gray-300 leading-relaxed mb-6">Beautifully complex security protocols orbiting a centralized application.</p>
-        <button class="project-btn px-6 py-2 bg-[#eadaa6] text-black font-bold hover:bg-white transition-colors duration-300" data-url="projects/ringed-core.html">BYPASS RINGS</button>
+        <h2 class="text-4xl font-bold mb-4 text-[#eadaa6] uppercase drop-shadow-[0_0_10px_#eadaa6]">Project 6: Ringed
+          Core</h2>
+        <p class="text-gray-300 leading-relaxed mb-6">Beautifully complex security protocols orbiting a centralized
+          application.</p>
+        <button
+          class="project-btn px-6 py-2 bg-[#eadaa6] text-black font-bold hover:bg-white transition-colors duration-300"
+          data-url="projects/proyecto6.html">BYPASS RINGS</button>
       </div>
     </section>
 
     <section class="scroll-section" id="section-uranus">
       <div class="p-8 retro-border bg-black/80 max-w-lg" style="border-color: #4fd0e7; box-shadow: 0 0 15px #4fd0e7;">
-        <h2 class="text-4xl font-bold mb-4 text-[#4fd0e7] uppercase drop-shadow-[0_0_10px_#4fd0e7]">Project 7: Ice Shell</h2>
-        <p class="text-gray-300 leading-relaxed mb-6">Cold storage solutions and highly optimized, lightweight frontend frameworks.</p>
-        <button class="project-btn px-6 py-2 bg-[#4fd0e7] text-black font-bold hover:bg-white transition-colors duration-300" data-url="projects/ice-shell.html">BREAK ICE</button>
+        <h2 class="text-4xl font-bold mb-4 text-[#4fd0e7] uppercase drop-shadow-[0_0_10px_#4fd0e7]">Project 7: Ice Shell
+        </h2>
+        <p class="text-gray-300 leading-relaxed mb-6">Cold storage solutions and highly optimized, lightweight frontend
+          frameworks.</p>
+        <button
+          class="project-btn px-6 py-2 bg-[#4fd0e7] text-black font-bold hover:bg-white transition-colors duration-300"
+          data-url="projects/proyecto7.html">BREAK ICE</button>
       </div>
     </section>
 
     <section class="scroll-section" id="section-neptune">
       <div class="p-8 retro-border bg-black/80 max-w-lg" style="border-color: #274687; box-shadow: 0 0 15px #274687;">
-        <h2 class="text-4xl font-bold mb-4 text-[#274687] uppercase drop-shadow-[0_0_10px_#274687]">Project 8: Deep Blue</h2>
-        <p class="text-gray-300 leading-relaxed mb-6">Navigating the darkest depths of legacy code to forge new, streamlined pathways.</p>
-        <button class="project-btn px-6 py-2 bg-[#274687] text-white font-bold hover:bg-white hover:text-black transition-colors duration-300" data-url="projects/deep-blue.html">DIVE DEEP</button>
+        <h2 class="text-4xl font-bold mb-4 text-[#274687] uppercase drop-shadow-[0_0_10px_#274687]">Project 8: Deep Blue
+        </h2>
+        <p class="text-gray-300 leading-relaxed mb-6">Navigating the darkest depths of legacy code to forge new,
+          streamlined pathways.</p>
+        <button
+          class="project-btn px-6 py-2 bg-[#274687] text-white font-bold hover:bg-white hover:text-black transition-colors duration-300"
+          data-url="projects/proyecto8.html">DIVE DEEP</button>
       </div>
     </section>
 
     <section class="scroll-section" id="section-blackhole">
       <div class="p-8 border-2 border-purple-600 shadow-[0_0_30px_#9333ea] bg-black/90 max-w-lg text-center">
-        <h2 class="text-5xl font-bold mb-4 text-purple-600 uppercase tracking-widest drop-shadow-[0_0_15px_#9333ea]">Event Horizon</h2>
+        <h2 class="text-5xl font-bold mb-4 text-purple-600 uppercase tracking-widest drop-shadow-[0_0_15px_#9333ea]">
+          Event Horizon</h2>
         <p class="text-gray-300 leading-relaxed mb-8 text-lg">
           Más proyectos pronto.<br>La singularidad está consumiendo nuevas ideas...
         </p>
-        <div class="px-6 py-3 border border-purple-600/50 text-purple-500 font-bold tracking-[0.3em] uppercase opacity-70 cursor-not-allowed">
+        <div
+          class="px-6 py-3 border border-purple-600/50 text-purple-500 font-bold tracking-[0.3em] uppercase opacity-70 cursor-not-allowed">
           [ SYSTEM STANDBY ]
         </div>
       </div>
     </section>
 
   </main>
-  
+
   <script src="js/main.js"></script>
 </body>
+
 </html>
