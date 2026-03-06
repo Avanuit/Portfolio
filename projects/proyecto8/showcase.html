@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>Mercury Core | App Showcase</title>
+  <title>Unchained | App Showcase</title>
   
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700&display=swap" rel="stylesheet"/>
   <script src="https://cdn.tailwindcss.com"></script>
@@ -26,9 +26,10 @@
       background-size: 200px 200px;
     }
 
-    .neon-text {
-      text-shadow: 0 0 10px #ff0040, 0 0 20px #ff0040;
-      color: #ff0040;
+    /* Brillo adaptado a Neptuno para los textos */
+    .neon-text-blue {
+      text-shadow: 0 0 10px #4f46e5, 0 0 20px #4f46e5;
+      color: #4f46e5;
     }
 
     .phone-container {
@@ -39,14 +40,16 @@
       padding: 2rem;
     }
 
+    /* Brillo del teléfono adaptado a Neptuno */
     .phone-mockup {
       width: 375px;        
       height: 812px;       
       background-color: #000;
       border: 14px solid #1a1a1a;
       border-radius: 40px;
+      /* Luz de neón azul detrás del teléfono */
       box-shadow: 
-        0 0 40px rgba(255, 0, 64, 0.2), 
+        0 0 40px rgba(79, 70, 229, 0.4), 
         inset 0 0 15px rgba(255, 255, 255, 0.1); 
       position: relative;
       overflow: hidden;
@@ -104,11 +107,11 @@
 <body>
 
   <header class="w-full p-8 flex justify-between items-center relative z-20">
-    <a href="../../index.html" class="uppercase text-xs font-bold tracking-widest text-gray-400 hover:text-[#ff0040] transition-colors flex items-center gap-2">
+    <a href="../../index.html" class="uppercase text-xs font-bold tracking-widest text-gray-400 hover:text-[#4f46e5] transition-colors flex items-center gap-2">
       <span class="text-lg">←</span> ABORTAR MISION(VOLVER AL SISTEMA)
     </a>
     <div class="text-right hidden md:block">
-      <h1 class="text-xl font-bold uppercase tracking-widest neon-text">UNCHAINED</h1>
+      <h1 class="text-xl font-bold uppercase tracking-widest neon-text-blue">UNCHAINED</h1>
       <p class="text-[10px] text-gray-500 tracking-[0.2em] uppercase">DISPOSITIVO MOVIL ACTIVO</p>
     </div>
   </header>
@@ -116,7 +119,7 @@
   <main class="phone-container relative z-10">
     <div class="phone-buttons relative">
       <div class="phone-mockup">
-        <iframe src="index.html" title="Mercury Core Mobile App"></iframe>
+        <iframe src="index.html" title="Unchained Mobile App"></iframe>
       </div>
     </div>
   </main>
