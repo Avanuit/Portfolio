@@ -16,9 +16,47 @@
   
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="bg-black">
+<body class="bg-black overflow-x-hidden">
   <div id="canvas-container"></div>
   
+  <div id="labels-container" class="fixed inset-0 pointer-events-none z-40 overflow-hidden"></div>
+  
+  <aside id="about-panel" class="fixed inset-y-0 right-0 w-full md:w-[45%] bg-black/80 backdrop-blur-md border-l-2 border-[#aaaaaa] shadow-[-10px_0_30px_rgba(170,170,170,0.1)] p-10 md:p-16 transform translate-x-full z-50 flex flex-col justify-center overflow-y-auto">
+    <div class="max-w-md mx-auto w-full mt-10 md:mt-0">
+      <p class="text-[#aaaaaa] tracking-[0.3em] text-sm mb-2 uppercase animate-pulse">Analizando Satélites de Datos...</p>
+      <h2 class="text-5xl font-bold mb-8 text-white uppercase drop-shadow-[0_0_10px_#aaaaaa]">Juan Pablo<br><span class="text-[#aaaaaa]">Chaves</span></h2>
+      
+      <div class="mb-10 text-gray-300 leading-relaxed space-y-4 text-sm md:text-base">
+        <p>
+          Soy un desarrollador integral y creador de experiencias digitales. Cuento con sólidos conocimientos en desarrollo <strong class="text-white">Front-end y Back-end</strong>, así como en la creación de aplicaciones móviles nativas.
+        </p>
+        <p>
+          Mi perfil se expande hacia el ámbito audiovisual y espacial: poseo amplia experiencia en modelado 3D utilizando <strong class="text-white">Maya y Blender</strong>, junto con dominio avanzado de edición de video en la <strong class="text-white">Adobe Suite</strong>.
+        </p>
+        <p>
+          Combino la lógica estructurada con el diseño visual para transformar código e ideas en mundos explorables y cinemáticos.
+        </p>
+        <p class="text-[10px] md:text-xs text-[#aaaaaa] uppercase tracking-widest mt-6 border-l-2 border-[#aaaaaa] pl-3 py-1 bg-white/5">
+          [ Observa la órbita actual para ver el stack tecnológico activo ]
+        </p>
+      </div>
+
+      <h3 class="text-xl font-bold text-white mb-4 uppercase tracking-widest border-b border-gray-700 pb-2">Habilidades Técnicas</h3>
+      <div class="flex flex-wrap gap-2 md:gap-3 mb-12">
+        <span class="px-2 py-1 md:px-3 md:py-1 border border-[#aaaaaa]/50 text-[#aaaaaa] text-[10px] md:text-xs font-bold uppercase tracking-widest bg-[#aaaaaa]/10">Flutter & Dart</span>
+        <span class="px-2 py-1 md:px-3 md:py-1 border border-[#aaaaaa]/50 text-[#aaaaaa] text-[10px] md:text-xs font-bold uppercase tracking-widest bg-[#aaaaaa]/10">Front-End</span>
+        <span class="px-2 py-1 md:px-3 md:py-1 border border-[#aaaaaa]/50 text-[#aaaaaa] text-[10px] md:text-xs font-bold uppercase tracking-widest bg-[#aaaaaa]/10">Back-End</span>
+        <span class="px-2 py-1 md:px-3 md:py-1 border border-[#aaaaaa]/50 text-[#aaaaaa] text-[10px] md:text-xs font-bold uppercase tracking-widest bg-[#aaaaaa]/10">Maya & Blender</span>
+        <span class="px-2 py-1 md:px-3 md:py-1 border border-[#aaaaaa]/50 text-[#aaaaaa] text-[10px] md:text-xs font-bold uppercase tracking-widest bg-[#aaaaaa]/10">Adobe Suite</span>
+        <span class="px-2 py-1 md:px-3 md:py-1 border border-[#aaaaaa]/50 text-[#aaaaaa] text-[10px] md:text-xs font-bold uppercase tracking-widest bg-[#aaaaaa]/10">Three.js</span>
+      </div>
+
+      <button id="btn-close-about" class="px-6 py-3 border-2 border-[#aaaaaa] text-[#aaaaaa] font-bold uppercase tracking-widest hover:bg-[#aaaaaa] hover:text-black transition-all duration-300 w-full pointer-events-auto">
+        CERRAR TERMINAL
+      </button>
+    </div>
+  </aside>
+
   <main class="content-overlay">
     <section class="scroll-section" id="section-sun">
       <div class="text-center max-w-4xl">
@@ -32,9 +70,9 @@
     
     <section class="scroll-section" id="section-mercury">
       <div class="p-8 bg-black/80 max-w-lg border-2 border-[#aaaaaa] shadow-[0_0_15px_#aaaaaa]">
-        <h2 class="text-4xl font-bold mb-4 text-[#aaaaaa] uppercase drop-shadow-[0_0_10px_#aaaaaa]">Proyecto 1: Mercury Core</h2>
-        <p class="text-gray-300 leading-relaxed mb-6">Deep-level systems architecture involving high-temperature data environments.</p>
-        <button class="project-btn px-6 py-2 bg-[#aaaaaa] text-black font-bold hover:bg-white hover:text-black transition-colors duration-300" data-url="projects/proyecto1.html">DESCUBRIR</button>
+        <h2 class="text-4xl font-bold mb-4 text-[#aaaaaa] uppercase drop-shadow-[0_0_10px_#aaaaaa]">Base de Datos: Perfil</h2>
+        <p class="text-gray-300 leading-relaxed mb-6">Conoce más sobre mi trayectoria, tecnologías que domino y mi enfoque como desarrollador.</p>
+        <button id="btn-about-me" class="px-6 py-2 bg-[#aaaaaa] text-black font-bold hover:bg-white hover:text-black transition-colors duration-300">INICIAR ESCANEO</button>
       </div>
     </section>
     
